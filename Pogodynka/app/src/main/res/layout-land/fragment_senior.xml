@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2286c3  ">
+
+    <ImageView
+        android:id="@+id/imageViewIconSunDown"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="78dp"
+        app:layout_constraintEnd_toStartOf="@+id/textViewtemp"
+        app:layout_constraintStart_toEndOf="@+id/imageViewIconSunUp"
+        app:layout_constraintTop_toBottomOf="@+id/searchViewCity"
+        tools:srcCompat="@drawable/ic_sunset_down" />
+
+    <ImageView
+        android:id="@+id/imageViewIconSunUp"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewIconSunDown"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchViewCity"
+        tools:srcCompat="@drawable/ic_sunset" />
+
+    <TextView
+        android:id="@+id/textViewDate2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/searchViewCity"
+        app:layout_constraintEnd_toStartOf="@+id/searchViewCity"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/searchViewCity" />
+
+    <TextView
+        android:id="@+id/textViewHour2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/searchViewCity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/searchViewCity"
+        app:layout_constraintTop_toTopOf="@+id/searchViewCity" />
+
+    <TextView
+        android:id="@+id/textViewtemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:textColor="@android:color/black"
+        android:textSize="72dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewIconMain"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewIconMain"
+        app:layout_constraintStart_toEndOf="@+id/imageViewIconSunDown"
+        app:layout_constraintTop_toTopOf="@+id/imageViewIconMain" />
+
+    <ImageView
+        android:id="@+id/imageViewIconMain"
+        android:layout_width="160dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewHour2"
+        tools:srcCompat="@drawable/ic_cloud" />
+
+    <TextView
+        android:id="@+id/textViewImageDesc"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="32dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewIconMain"
+        app:layout_constraintStart_toStartOf="@+id/imageViewIconMain"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewIconMain" />
+
+    <TextView
+        android:id="@+id/textViewPress2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textColor="@android:color/black"
+        android:textSize="40dp"
+        app:layout_constraintEnd_toEndOf="@+id/textViewtemp"
+        app:layout_constraintStart_toStartOf="@+id/textViewtemp"
+        app:layout_constraintTop_toBottomOf="@+id/textViewtemp" />
+
+    <TextView
+        android:id="@+id/textViewDescUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="wschód"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/imageViewIconSunUp"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewIconSunUp"
+        app:layout_constraintStart_toStartOf="@+id/imageViewIconSunUp" />
+
+    <TextView
+        android:id="@+id/textViewDescDown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="zachód"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/imageViewIconSunDown"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewIconSunDown"
+        app:layout_constraintStart_toStartOf="@+id/imageViewIconSunDown" />
+
+    <TextView
+        android:id="@+id/textViewHourUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewIconSunUp"
+        app:layout_constraintStart_toStartOf="@+id/imageViewIconSunUp"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewIconSunUp" />
+
+    <TextView
+        android:id="@+id/textViewHourDown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewIconSunDown"
+        app:layout_constraintStart_toStartOf="@+id/imageViewIconSunDown"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewIconSunDown" />
+
+    <SearchView
+        android:id="@+id/searchViewCity"
+        style="@style/SearchViewStyle"
+        android:layout_width="440dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="16dp"
+        android:background="#63b4f4"
+        android:orientation="horizontal"
+        android:theme="@style/AppSearchView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_thermometer" />
+
+    <TextView
+        android:id="@+id/textViewMint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+        app:layout_constraintEnd_toStartOf="@+id/textViewMaxt"
+        app:layout_constraintStart_toEndOf="@+id/imageView5"
+        app:layout_constraintTop_toTopOf="@+id/imageView5" />
+
+    <TextView
+        android:id="@+id/textViewMaxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="440dp"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewMint"
+        app:layout_constraintTop_toTopOf="@+id/imageView5" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Min"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textViewMint"
+        app:layout_constraintEnd_toEndOf="@+id/textViewMint"
+        app:layout_constraintStart_toStartOf="@+id/textViewMint"
+        app:layout_constraintTop_toTopOf="@+id/imageView5" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Max"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textViewMaxt"
+        app:layout_constraintEnd_toEndOf="@+id/textViewMaxt"
+        app:layout_constraintStart_toStartOf="@+id/textViewMaxt"
+        app:layout_constraintTop_toTopOf="@+id/imageView5" />
+</androidx.constraintlayout.widget.ConstraintLayout>
